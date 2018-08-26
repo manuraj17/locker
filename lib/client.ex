@@ -15,6 +15,6 @@ defmodule Locker.Client do
   end
 
   defp via_tuple(box_name) do
-    {:via, Locker.Registry, box_name}
+    {:via, :gproc, {:n, :l, {:box_name, box_name}}}
   end
 end
