@@ -1,18 +1,8 @@
 defmodule Locker do
-  @moduledoc """
-  Documentation for Locker.
-  """
+  use Application
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Locker.hello
-      :world
-
-  """
-  def hello do
-    :world
+  def start(_type, _args) do
+    Locker.Supervisor.start_link
+    Locker.Registry.start_link
   end
 end
