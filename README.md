@@ -29,10 +29,10 @@ be found at [https://hexdocs.pm/locker](https://hexdocs.pm/locker).
 
 `cd` into the directory and run `iex -S mix`
 
-creating a box: `Locker.Supervisor.open_box(<box_name>, <password>)`
-opening a box: `Locker.Client.unlock(<box_name>, <password>)`
+creating a box: `Locker.Supervisor.open_box(<box_name>, <password>)`  
+opening a box: `Locker.Client.unlock(<box_name>, <password>)`  
 update password of a box: `Locker.Client.reset(<box_name>, <old_password>,
-<new_password>)`
+<new_password>)`  
 
 ## Sample output
 ```
